@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Scanner;
 public class prac {
@@ -12,3 +13,4 @@ public class prac {
         System.out.println(a);
     }
 }
+
