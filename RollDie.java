@@ -13,7 +13,7 @@ public class RollDie {
             face = 1 + randomNumbers.nextInt(6);
             for (int j = 1; j <= 6; j++) {
                 if (face == j) {
-                    frequency.set(j, frequency.get(j - 1) + 1);
+                    frequency.set(j - 1, frequency.get(j - 1) + 1);
                 }
             }
         }
