@@ -11,11 +11,7 @@ public class RollDie {
         int face;
         for (int i = 1; i <= 6000; i++) {
             face = 1 + randomNumbers.nextInt(6);
-            for (int j = 1; j <= 6; j++) {
-                if (face == j) {
-                    frequency.set(j - 1, frequency.get(j - 1) + 1);
-                }
-            }
+            frequency.set(face - 1, frequency.get(face - 1) + 1);
         }
         System.out.printf("Name\tFrequency\n");
         for (int j = 1; j <= 6; j++) {
